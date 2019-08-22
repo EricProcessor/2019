@@ -6,9 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<script>
+window.onload = function(){
+    var aBtn = document.getElementsByTagName('input');
+    console.log(aBtn);
+    for(let i = 0;i<aBtn.length;i++){
+        aBtn[i].onclick = function(){
+            alert(i)
+        }
+    }
+}
+
+</script>
 <body>
-    <script>
-    
-    </script>
+    <input type="button" value="aaa">
+    <input type="button" value="bbb">
+    <input type="button" value="ccc">
+    <input type="button" value="ddd">
 </body>
 </html>
